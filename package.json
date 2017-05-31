@@ -1,0 +1,25 @@
+{
+  "name": "chattrbox",
+  "version": "1.0.0",
+  "description": "Chatbox realtime app",
+  "main": "index.js",
+  "scripts": {
+    "test": "testing text",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "chatbox-realtime"
+  },
+  "keywords": [
+    "chatbox",
+    "realtime",
+    "nodeJS"
+  ],
+  "author": "Nguyen Tien Dat",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
