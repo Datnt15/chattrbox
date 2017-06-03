@@ -6,7 +6,14 @@
   "scripts": {
     "test": "testing text",
     "start": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "build": "browserify -d app/js/src/app.js -o app/js/dist/main.js",
+    "watch": "watchify -v -d app/js/src/app.js -o app/js/dist/main.js"
+  },
+  "browserify": {
+    "transform" : [
+      ["babel", {"presets": ["es2015"], "sourceMap": true}]
+    ]
   },
   "repository": {
     "type": "git",
